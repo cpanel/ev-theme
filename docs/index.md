@@ -4,7 +4,7 @@
 
 ## Goal
 
-This project provides a script to upgrade an existing `cPanel&WHM` CentOS 7 server installation to AlmaLinux 8.
+This project provides a script to upgrade an existing `cPanel & WHM` CentOS 7 server installation to AlmaLinux 8.
 
 ## Introduction
 
