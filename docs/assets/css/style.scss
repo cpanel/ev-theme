@@ -37,3 +37,25 @@ h1, h2, h3, h4, h5, h6 {
     font-family: montserrat,sans-serif;
     color: #293A4A;
 }
+
+header a.button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:transparent url(../images/github-button.png) 0 0 no-repeat
+}
+
+pre {
+    padding: 20px;
+    overflow: auto;
+    text-shadow: none;
+    background: #CCCCCC;
+    border:solid 1px #f2f2f2
+}
+
+pre code {
+    padding: 0;
+    color: #428BCA;
+    background-color: #EAEAEA;
+    border:none
+}
