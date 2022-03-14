@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
 }
 
-
 #main-content h1 {
     font-family: montserrat,sans-serif;
     color: #293A4A;
@@ -38,11 +37,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #293A4A;
 }
 
-header a.button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background:transparent url(../images/github-button.png) 0 0 no-repeat
+// header a.button {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background:transparent url(../images/github-button.png) 0 0 no-repeat
+// }
+
+a a:hover a:visited a:active {
+    color: #428BCA;
 }
 
 pre {
@@ -56,6 +59,6 @@ pre {
 pre code {
     padding: 0;
     color: #428BCA;
-    background-color: #EAEAEA;
+    background-color: #CCCCCC;
     border:none
 }
