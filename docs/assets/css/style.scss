@@ -9,3 +9,13 @@ header {
     background: #FF6C2C;
     border-bottom: solid 1px #FF6C2C;
 }
+
+body {
+    font-family: open sans,sans-serif;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+}
