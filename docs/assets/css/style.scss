@@ -48,17 +48,21 @@ a, a:hover, a:visited, a:active {
     color: #428BCA;
 }
 
+.highlight {
+    background-color: #F5F5F5;
+}
+
 pre {
     padding: 20px;
     overflow: auto;
     text-shadow: none;
-    background: #CCCCCC;
+    background: #F5F5F5;
     border:solid 1px #f2f2f2
 }
 
 pre code {
     padding: 0;
     color: #428BCA;
-    background-color: #CCCCCC;
+    background-color: #F5F5F5;
     border:none
 }
