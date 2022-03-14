@@ -18,28 +18,38 @@ The Alma Linux Elevate project is very effective at upgrading the distro package
 
 **The cPanel ELEVATE program does not back up before upgrading**
 
-## How to use it
+## Download the elevate-script
 
 * You can download a copy of the script to run on your cPanel server via:
 
 ```bash
-wget -O /scripts/elevate_cpanel \
-    https://raw.githubusercontent.com/cpanel/elevate/RELEASE/elevate_cpanel ;
-chmod 700 /scripts/elevate_cpanel
+wget -O /scripts/elevate-cpanel \
+    https://raw.githubusercontent.com/cpanel/elevate/stable/elevate-script ;
+chmod 700 /scripts/elevate-cpanel
+```
 
+## Usage
+
+```bash
 # Read the help (and risks mentionned in this documentation)
-/scripts/elevate_cpanel --help
+/scripts/elevate-cpanel --help
+
+# Check if your server is ready for elevation (dry run mode)
+/scripts/elevate-cpanel --check
 
 # Start the migration
-/scripts/elevate_cpanel --start
+/scripts/elevate-cpanel --start
 
 ... # expect multiple reboots (~30 min)
 
 # Check the current status
-/scripts/elevate_cpanel --status
+/scripts/elevate-cpanel --status
+
+# Monitor the elevation log
+/scripts/elevate-cpanel --log
 
 # In case of errors, once fixed you can continue the migration process
-/scripts/elevate_cpanel --continue
+/scripts/elevate-cpanel --continue
 ```
 
 ## Some of the problems you might find include:
