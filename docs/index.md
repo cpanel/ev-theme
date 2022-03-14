@@ -23,10 +23,10 @@ Before updating, please check that you met all the pre requirements:
 * You will need to have console access available to your machine
 * You should back up your server before attempting this upgrade
 * Ensure your server is up to date: `yum update`
-* Ensure you are using the last stable version of cPanel&WHM
+* Ensure you are using the last stable version of cPanel & WHM
 * Use a version of MySQL/MariaDB compliant with Alamlinux 8.
 
-**The cPanel elevate project does not back up before upgrading**
+**The cPanel elevate script does not back up before upgrading**
 
 ## Download the elevate-script
 
