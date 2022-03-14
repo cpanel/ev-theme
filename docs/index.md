@@ -1,6 +1,10 @@
 [![testsuite](https://github.com/cpanel/elevate/actions/workflows/testsuite.yml/badge.svg?branch=main)](https://github.com/cpanel/elevate/actions/workflows/testsuite.yml)
 
-# Welcome to the cPanel ELEVATE project.
+# Welcome to the cPanel Elevate project.
+
+## Goal
+
+This project provides a script to upgrade an existing `cPanel&WHM` CentOS 7 server installation to AlmaLinux 8.
 
 ## Introduction
 
@@ -11,12 +15,17 @@ This project builds on the [Alma Linux Elevate](https://wiki.almalinux.org/eleva
 
 The Alma Linux Elevate project is very effective at upgrading the distro packages from [CentOS 7](https://www.centos.org/) to [AlmaLinux 8](https://almalinux.org/). However if you attempt to do this on a CentOS 7 based [cPanel install](https://www.cpanel.net/), you will end up with a broken system.
 
-## What you need to use it
+## Before updating
+
+Before updating, please check that you met all the pre requirements:
 
 * You will need to have console access available to your machine
-* You should back up your server before attempting this
+* You should back up your server before attempting this upgrade
+* Ensure your server is up to date: `yum update`
+* Ensure you are using the last stable version of cPanel&WHM
+* Use a version of MySQL/MariaDB compliant with Alamlinux 8.
 
-**The cPanel ELEVATE program does not back up before upgrading**
+**The cPanel elevate project does not back up before upgrading**
 
 ## Download the elevate-script
 
