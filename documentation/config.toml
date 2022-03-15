@@ -1,8 +1,12 @@
-baseURL = 'http://example.org/'
+# References:
+#
+# https://github.com/marketplace/actions/hugo-static-site-generator
+# https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/
+
+baseURL = 'https://cpanel.github.io/elevate/'
 languageCode = 'en-us'
 title = 'cPanel elevate documentation'
 theme = "cptheme"
-#theme = "ananke"
 
 sectionPagesMenu = "main"
 
@@ -22,25 +26,25 @@ sectionPagesMenu = "main"
 ##
   [[menu.left]]
     name = "Introduction"
-    url = "#introduction"
+    url = "/#introduction"
     weight = 1
 
   [[menu.left]]
     name = "Download"
-    url = "#download-the-elevate-script"
+    url = "/#download-the-elevate-script"
     weight = 2
 
   [[menu.left]]
     name = "Usage"
-    url = "#usage"
+    url = "/#usage"
     weight = 3
 
   [[menu.left]]
     name = "Risks"
-    url = "#risks"
+    url = "/#risks"
     weight = 4
 
   [[menu.left]]
     name = "Copyright"
-    url = "#copyright"
+    url = "/#copyright"
     weight = 5
