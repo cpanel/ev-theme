@@ -8,20 +8,15 @@ sectionPagesMenu = "main"
 
 [menu]
   [[menu.main]]
-    name = "Elevate"
+    name = "Report an issue"
     url = "/"
     weight = 1
   
   [[menu.main]]
-    name = "Forums"
+    name = "Contribute"
     url = "https://forums.cpanel.net/"
     weight = 2
   
-  [[menu.main]]
-    name = "Support Ticket"
-    url = "https://tickets.cpanel.net/review/login.cgi"
-    weight = 3
-
 ##
 ## left menu
 ##
