@@ -11,14 +11,23 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
-    - name: chdir
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod      
+    - name: add timestamp
       working-directory: ./docs-website-src
       run: |
-        cd docs-website-src
         date >> content/_index.md
-    - name: build
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.91.2'
+
+    - name: Build
       working-directory: ./docs-website-src
-      uses: github-actions-x/hugo@master
+      run: |
+        hugo -D
+
     - name: check
       run: |
         pwd
