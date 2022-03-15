@@ -1,0 +1,29 @@
+name: website
+
+on:
+  push:
+    branches:
+    - master
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: chdir
+      run: |
+        cd docs-website-src
+        date >> content/_index.md
+    - name: build
+      uses: github-actions-x/hugo@master
+    - name: check
+      run: |
+        pwd
+        cat ../docs/index.html
+    # - name: push
+    #   uses: github-actions-x/commit@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     push_branch: 'master'
+    #     commit_message: 'publish'
