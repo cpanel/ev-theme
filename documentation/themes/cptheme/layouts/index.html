@@ -1,7 +1,35 @@
 {{ define "main" }}
+<div id="content">
+    <div class="container">
+
+    <div class="row">
+
+    <div class="d-none d-md-block col-md-3">
+        <aside class="side-nav sticky">
+          <h4 class="mt-1">Elevate cPanel</h4>
+          <div class="installation-contents-wrapper">
+    
+            <ul class="installation-list">
+              <li><a class="btn btn-primary" role="button" href="https://docs.cpanel.net/installation-guide/install/">GitHub Repository</a></li>
+              <li><a class="btn btn-primary" role="button" href="https://docs.cpanel.net/installation-guide/install/">Report an issue</a></li>
+              <li><a class="btn btn-primary" role="button" href="https://docs.cpanel.net/installation-guide/install/">Documentation</a></li>
+              {{ range .Site.Menus.left }}              
+               <a href="{{ .URL }}">
+                  {{ $text := print .Name | safeHTML }}
+                  <li>{{ $text }}</li>
+                </a>
+              {{ end }}
+            </ul>
+          </div>
+
+    </aside>
+      </div>      
+
+      
+      <div class="col-md-9">
+
  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
     {{ .Content }}
-    XXX
   </article>
   {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
   {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
@@ -53,4 +81,9 @@
 
       </div>
   {{ end }}
+
+</div>
+</div>
+    </div>
+</div>
 {{ end }}

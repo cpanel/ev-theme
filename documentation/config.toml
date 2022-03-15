@@ -8,17 +8,44 @@ sectionPagesMenu = "main"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    pre = "home"
+    name = "Elevate"
     url = "/"
     weight = 1
+  
   [[menu.main]]
-    name = "Posts"
-    pre = "pen-tool"
-    url = "/posts/"
+    name = "Forums"
+    url = "https://forums.cpanel.net/"
     weight = 2
+  
   [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
+    name = "Support Ticket"
+    url = "https://tickets.cpanel.net/review/login.cgi"
     weight = 3
+
+##
+## left menu
+##
+  [[menu.left]]
+    name = "Introduction"
+    url = "#introduction"
+    weight = 1
+
+  [[menu.left]]
+    name = "Download"
+    url = "#download-the-elevate-script"
+    weight = 2
+
+  [[menu.left]]
+    name = "Usage"
+    url = "#usage"
+    weight = 3
+
+  [[menu.left]]
+    name = "Risks"
+    url = "#risks"
+    weight = 4
+
+  [[menu.left]]
+    name = "Copyright"
+    url = "#copyright"
+    weight = 5
