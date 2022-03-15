@@ -1,6 +1,6 @@
 ---
 title: "Known cPanel Elevate Blockers"
-date: 2018-09-16T08:53:47-05:00
+date: 2022-03-15T08:53:47-05:00
 draft: false
 layout: single
 ---
