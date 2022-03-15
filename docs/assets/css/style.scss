@@ -10,6 +10,14 @@ header {
     border-bottom: solid 1px #FF6C2C;
 }
 
+.site-title::before {
+    content: url("/assets/logo.png");
+    display: inline-block;
+    position: relative;
+    width: 5px;
+    top: 10px;
+    }
+
 body {
     font-family: open sans,sans-serif;
     color: #000;
