@@ -1,5 +1,9 @@
 name: website
 
+## https://github.com/peaceiris/actions-hugo
+## https://github.com/github-actions-x/hugo
+## https://github.com/github-actions-x/commit
+
 on:
   push:
     branches:
@@ -14,10 +18,7 @@ jobs:
       with:
         submodules: true  # Fetch Hugo themes (true OR recursive)
         fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod      
-    - name: add timestamp
-      working-directory: ./docs-website-src
-      run: |
-        date >> content/_index.md
+
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
@@ -28,14 +29,18 @@ jobs:
       run: |
         hugo -D
 
-    - name: check
+    - name: check delta
       run: |
-        pwd
-        cat docs/index.html
+        git status
         git diff
-    # - name: push
-    #   uses: github-actions-x/commit@master
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     push_branch: 'master'
-    #     commit_message: 'publish'
+
+    - name: push
+      uses: github-actions-x/commit@v2.8
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'main'
+        commit-message: 'Regenerate Documentation Website'
+        force-add: 'true'
+        files: docs/
+        name: GitHub Action
+        email: github.bot@cpanel.net
