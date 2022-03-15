@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cpanel.github.io/elevate/</loc>
+    <loc>https://cpanel.github.io/ev-theme/</loc>
     <lastmod>2018-09-16T08:53:47-05:00</lastmod>
   </url><url>
-    <loc>https://cpanel.github.io/elevate/blockers/</loc>
+    <loc>https://cpanel.github.io/ev-theme/blockers/</loc>
     <lastmod>2018-09-16T08:53:47-05:00</lastmod>
   </url><url>
-    <loc>https://cpanel.github.io/elevate/categories/</loc>
+    <loc>https://cpanel.github.io/ev-theme/categories/</loc>
   </url><url>
-    <loc>https://cpanel.github.io/elevate/tags/</loc>
+    <loc>https://cpanel.github.io/ev-theme/tags/</loc>
   </url>
 </urlset>
