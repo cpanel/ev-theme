@@ -9,12 +9,12 @@ sectionPagesMenu = "main"
 [menu]
   [[menu.main]]
     name = "Report an issue"
-    url = "/"
+    url = "https://github.com/cpanel/elevate/issues"
     weight = 1
   
   [[menu.main]]
     name = "Contribute"
-    url = "https://forums.cpanel.net/"
+    url = "https://github.com/cpanel/elevate"
     weight = 2
   
 ##
